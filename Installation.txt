@@ -1,0 +1,32 @@
+Instructions:
+
+1. Add scripts to your Maya 2018 scripts folder (...\Documents\maya\2018\scripts).
+
+2a. Add this to your script editor in maya (as a Python Script) for material script:
+
+import materialSetupToolUI
+reload(materialSetupToolUI)
+
+materialSetupToolUI.MaterialSetup()
+
+2b. Add this to your script editor in maya (as a Python Script) for bad geo script:
+
+import BadGeoFinder
+reload(BadGeoFinder)
+
+BadGeoFinder.BadGeoFind()
+
+2b. Add this to your script editor in maya (as a Python Script) for Autorig script:
+
+import AutoRigger
+reload(AutoRigger)
+
+AutoRigger.AutoRig()
+
+3. Save each script to a button on the shelf. 
+
+4. Rename button if you want.
+
+5. Click button to run tool.
+
+6. Use tool.
