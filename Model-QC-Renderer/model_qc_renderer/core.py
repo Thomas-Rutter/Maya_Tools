@@ -41,7 +41,7 @@ def create_camera(model):
     qc_camera = cmds.camera(name="QC_Camera")
     qc_camera_shape = qc_camera[1]
     cmds.select(model)
-    cmds.viewFit(qc_camera_shape, f=0.8)
+    cmds.viewFit(qc_camera_shape, fitFactor=0.8)
     return qc_camera[0]
 
 
@@ -106,3 +106,4 @@ def main():
     cmds.select(model)
     create_render_layers(model, camera)
     set_render_settings(camera)
+    cmds.currentTime(1001, edit=True)
